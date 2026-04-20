@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Együttes Lottónyeremények Esélye Magyarországon</title>
+<title>lottó</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,10 +106,251 @@ window.Quarto = {
 </tbody>
 </table>
 <p>Mekkora a matematikai esélye annak, hogy egyetlen héten Magyarország három legnépszerűbb számsorsjátékán egyaránt szülessen telitalálatos szelvény?</p>
-<p>Ennek a különleges együttállásnak a valószínűségét keressük. A probléma megválaszolásához először fel kell tárni azokat a paramétereket és matematikai törvényszerűségeket, amelyek a lottójátékok működését irányítják.</p>
+<p>Ennek az együttállásnak a valószínűségét keressük.</p>
+<hr>
+</section>
+<section id="historikus-tényadatok-megtörtént-e-már-valaha-a-valóságban" class="level1">
+<h1>2. Historikus Tényadatok: Megtörtént-e már valaha a valóságban?</h1>
+<p>Érdemes vizsgálni, hogy a valóságban hányszor fordult elő a három játék együttes telitalálata.</p>
+<p>Mivel a Skandináv lottó (amely a három játék közül a legfiatalabb) 1999. legvégén indult útjára, a vizsgálatot innentől számítom.</p>
+<section id="a-nyers-történelmi-adatok" class="level3">
+<h3 class="anchored" data-anchor-id="a-nyers-történelmi-adatok">A nyers történelmi adatok</h3>
+<p>A három lottójáték közös történelme <strong>1384 teljes naptári hetet</strong> ölel fel (közel 27 évnyi sorsolást).</p>
+<p>A szűrési feltételek alapján olyan heteket kerestem, ahol a hivatalos nyereményjegyzék szerint az Ötöslottón, a Hatoslottón és a Skandináv lottón is játszottak telitalálatos szelvényt.</p>
+<p>A lottótörténelem 1384 közös hete alatt <strong>8 alkalommal</strong> fordult elő ez az esemény.</p>
+</section>
+<section id="az-együttes-telitalálatok-historikus-időpontjai" class="level3">
+<h3 class="anchored" data-anchor-id="az-együttes-telitalálatok-historikus-időpontjai">Az együttes telitalálatok historikus időpontjai</h3>
+<p>Az alábbi heteken játszottak mindhárom lottón telitalálatos szelvényt:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Sorszám</th>
+<th style="text-align: center;">Év</th>
+<th style="text-align: center;">Naptári Hét</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1.</td>
+<td style="text-align: center;">2000.</td>
+<td style="text-align: center;">31. hét</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2.</td>
+<td style="text-align: center;">2006.</td>
+<td style="text-align: center;">9. hét</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3.</td>
+<td style="text-align: center;">2007.</td>
+<td style="text-align: center;">18. hét</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4.</td>
+<td style="text-align: center;">2009.</td>
+<td style="text-align: center;">50. hét</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5.</td>
+<td style="text-align: center;">2012.</td>
+<td style="text-align: center;">39. hét</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6.</td>
+<td style="text-align: center;">2018.</td>
+<td style="text-align: center;">22. hét</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7.</td>
+<td style="text-align: center;">2022.</td>
+<td style="text-align: center;">2. hét</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">8.</td>
+<td style="text-align: center;">2026.</td>
+<td style="text-align: center;">16. hét</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="historikus-valószínűség" class="level3">
+<h3 class="anchored" data-anchor-id="historikus-valószínűség">Historikus valószínűség</h3>
+<p>A tapasztalati valószínűség az alábbi:</p>
+<p><span class="math display">\[P_{historikus} = \frac{\text{Bekövetkezések száma}}{\text{Összes vizsgált hét}} = \frac{8}{1384} \approx 0,00578\]</span></p>
+<p>Ez százalékosan kifejezve <strong>0,578%</strong>, ami nagyságrendileg:</p>
+<p><span class="math display">\[1 : 173\]</span></p>
+<p>Magyarán átlagosan minden 173. héten történik meg, hogy mindhárom lottón legyen telitalálatos szelvény.</p>
+<p>Naptári évekre visszabontva a tényleges történelmi várakozási idő:</p>
+<p><span class="math display">\[E_{y} = \frac{173}{52} \approx 3,33 \text{ év}\]</span></p>
+<hr>
+</section>
+</section>
+<section id="az-eddigi-játékoskedv-és-a-telitalálatok-ábrázolása" class="level1">
+<h1>3. Az Eddigi Játékoskedv és a Telitalálatok ábrázolása</h1>
+<p>Érdemes vizuálisan megtekinteni, hogy adott lottójátékban milyen gyakran, milyen sűrűn születik telitalálatos szelvény. Ezt az alábbi ábra szemlélteti azon becsült értékekkel együttesen, hogy adott héten mennyi szelvényt játszhattak meg a játékosok.</p>
+<p>A Szerencsejáték Zrt. kizárólag azt teszi közzé, hogy adott találat mellett hány nyerő szelvény volt (pl. x darab 2-es találat, y darab 3-as találat, z darab 4-es találat, stb.</p>
+<p>Ebből viszont már lehet következtetni arra, hogy összesen kb. mennyi szelvényt játszottak meg a játékosok. Ezen következtetések minimum és maximum értékeit jelenítettem meg az alábbi sávdiagramban, feltüntetve benne * a mindenkori telitalálatos szelvények előfordulását, * a top 5 legnagyobb nyereményt, * azon események időpontját, amikor mindhárom játékban volt telitalálatos szelvény.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="becsult_heti_szelvenyok_atlagokkal.png" class="img-fluid figure-img"></p>
+<figcaption>A megjátszott szelvények becsült számossága és a telitalálatos szelvények feltüntetése</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="a-nagy-számok-törvénye-tiszta-kumulatív-esély-a-kezdetektől-és-a-beállási-időszak" class="level1">
+<h1>4. A Nagy Számok Törvénye: Tiszta kumulatív esély a kezdetektől és a beállási időszak</h1>
+<p>Ebben a megközelítésben a közös lottótörténelem legelső hetétől indul a számlálás (1999. 41. hét). Minden eltelt héten a vizsgált sorsolások száma (a nevező) eggyel nő, míg az együttes telitalálatok száma (a számláló) kizárólag azokon a heteken ugrik meg, amikor megtörténik a ritka együttállás.</p>
+<section id="a-beállási-időszak-első-10-év-leválasztása" class="level3">
+<h3 class="anchored" data-anchor-id="a-beállási-időszak-első-10-év-leválasztása">A beállási időszak (első 10 év) leválasztása</h3>
+<p>A kumulatív gyakoriság a kezdeti években rendkívül érzékeny: egy kis elemű halmazban egyetlen bekövetkezett telitalálat is irreálisan felhúzza az esélyt, míg a hiánya túlzott pesszimizmust sugall. Annak érdekében, hogy a lottójátékok valódi, hosszú távú trendjét vizsgáljam, a számítást két szakaszra bontottam:</p>
+<ol type="1">
+<li><p><strong>Beállási időszak (0-10. év):</strong> A rendszer inicializációs fázisa (az első 520 hét), ahol a statisztikai ingadozás még túl magas.</p></li>
+<li><p><strong>Stabilizált időszak (10. évtől napjainkig):</strong> Ahol a nagy számok törvénye már érvényesül, és az esélyek beállnak a valós matematikai várakozás köré.</p></li>
+</ol>
+<p>A statisztikai átlagot és a szórást, valamint a szélsőértékeket <strong>kizárólag a 10 évnyi adat felhalmozódása utáni (stabilizált)</strong> tartományban vizsgáltam.</p>
+</section>
+<section id="a-stabilizált-historikus-adatok-szélsőértékei" class="level3">
+<h3 class="anchored" data-anchor-id="a-stabilizált-historikus-adatok-szélsőértékei">A stabilizált historikus adatok szélsőértékei</h3>
+<p>A 10. év letelte (2009. vége) utáni historikus adatokban az alábbi két szélsőértéket azonosítottam:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Paraméter</th>
+<th style="text-align: left;">Maximális esély (2009. 50. hét)</th>
+<th style="text-align: left;">Minimális esély (2026. 15. hét)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Kumulatív telitalálat esélye</strong></td>
+<td style="text-align: left;"><span class="math inline">\(0.753\%\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(0.506\%\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Várható várakozási idő</strong></td>
+<td style="text-align: left;"><span class="math inline">\(2.55 \text{ év}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(3.80 \text{ év}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Eltelt hetek száma (N)</strong></td>
+<td style="text-align: left;"><span class="math inline">\(531 \text{ hét}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1383 \text{ hét}\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="vizuális-elemzés" class="level3">
+<h3 class="anchored" data-anchor-id="vizuális-elemzés">Vizuális elemzés</h3>
+<p>Az alábbi grafikonok vizuálisan ábrázolják a rendszer stabilizálódását. A függőleges szaggatott vonal jelzi a 10. év végét, amelytől balra a beállási időszak áttetsző formában jelenik meg.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pure_cumulative_prob_stabilized.png" class="img-fluid figure-img"></p>
+<figcaption>kumulatív valószínűség időrendben (Beállási időszak leválasztásával)</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pure_cumulative_years_stabilized.png" class="img-fluid figure-img"></p>
+<figcaption>kumulatív valószínűség időrendben (Beállási időszak leválasztásával)</figcaption>
+</figure>
+</div>
+</section>
+<section id="paraméterek-összegzése" class="level3">
+<h3 class="anchored" data-anchor-id="paraméterek-összegzése">Paraméterek összegzése</h3>
+<p>Kizárólag a 10. évet követő, stabil historikus időszakot alapul véve a magyar lottótörténelem kumulatív mutatói a három lottójáték együttes telitalálatára a következők:</p>
+<p><span class="math display">\[Átlagos \ stabilizált \ esély: \ 0.595\%\]</span> <span class="math display">\[Átlagos \ várható \ ido: \ 3.27 \ év\]</span></p>
+<p><strong>Szórási mező határai (<span class="math inline">\(\pm 1 \sigma\)</span>):</strong> * Valószínűség esetén: <span class="math inline">\([0.533\%, \ 0.657\%]\)</span> * Várható időtartam esetén: <span class="math inline">\([2.95 \text{ év}, \ 3.59 \text{ év}]\)</span></p>
+</section>
+<section id="a-tripla-telitalálat-időpontjai-összevetve-a-magas-nyereményekkel-és-a-tripla-telitalálat-kumulatív-valószínűségével" class="level3">
+<h3 class="anchored" data-anchor-id="a-tripla-telitalálat-időpontjai-összevetve-a-magas-nyereményekkel-és-a-tripla-telitalálat-kumulatív-valószínűségével">A Tripla Telitalálat Időpontjai, Összevetve a Magas Nyereményekkel és a Tripla Telitalálat Kumulatív Valószínűségével</h3>
+<p><img src="lotto_probability_visualization.png" class="img-fluid"></p>
+<p>Az ábrán az látszik, hogy</p>
+<ul>
+<li><p>a tripla telitalálat gyakorisága és időpontja nem jár együtt a magas nyeremények időpontjával.</p></li>
+<li><p>A tripla telitalálat gyakorisága periodikus és magas szórással, de közel azonos időközönként történik meg.</p></li>
+</ul>
+<!--
+
+
+
+# 3. Maximum Likelihood Estimation (MLE): Bővülő visszatekintési ablakos elemzés
+
+Ebben a modellben egy dinamikus, úgynevezett **bővülő ablakos (expanding window)** elemzéssel dolgozom.
+A jelenlegi időpontot rögzített végpontként kezelem, és a mintát a múlt irányába folyamatosan növelem. Azt vizsgálom, hogy visszafelé haladva az időben egy adott dátumig figyelembe véve mekkora az esély az esemény bekövetkezésére (és mekkora a várható időtartam)
+
+A vizsgálatot 208 hétnél (4 év) kezdem el, és egészen a rendelkezésre álló legkorábbi releváns időpontig, a 1999. év 41. hetéig megyek vissza az időben.
+
+Ez a megközelítés rávilágít arra, hogy a historikus adatok különböző aspektusból nézve másképp határozzák meg a három játék egyidejű győzelmi esélyét.
+
+### A számítás módszertana
+
+A számítás során minden egyes lépésben egyre nagyobb $n$ heti adatmennyiséggel kalkulálok, ahol $n$ értéke 208-tól indulva növekszik. Az együttes esélyt ($P_{c}$) minden ablakméretre az egyedi tapasztalati gyakoriságok szorzataként határozom meg:
+
+$$P_{c}(n) = \bar{p}_{ötös, n} \cdot \bar{p}_{hatos, n} \cdot \bar{p}_{skandináv, n}$$
+
+Ahol $\bar{p}_{n}$ az adott játék telitalálati gyakorisága az utolsó $n$ hét adatai alapján. Ebből a várható várakozási idő ($E_{y}$) a következő ilyen eseményig években kifejezve:
+
+$$E_{y}(n) = \frac{1}{P_{c}(n) \cdot 52}$$
+
+### A historikus adatok szélsőértékei
+
+Azonosítottam azt a két pontot, amelyek mentén a statisztikai esélyek a legszélsőségesebbek.
+
+| Paraméter | Maximális esély (2008. 38. hét) | Minimális esély (2023. 31. hét) |
+| :--- | :--- | :--- |
+| **Együttes telitalálat esélye** | $0.484\%$ | $0,343\%$ |
+| **Várható várakozási idő** | $3.97 \text{ év}$ | $5.61 \text{ év}$ |
+| **Visszatekintési ablak mérete** | $1\ 217 \text{ hét}$ | $497 \text{ hét}$ |
+
+A maximális esélyt egy széles, 1217 hetes ablak adja (visszanyúlva 2002-ig), míg a minimális esélyt egy szűkebb, az utolsó 497 hét adatát tartalmazó minta eredményezi.
+
+### Vizuális elemzés
+
+Az alábbi grafikonok szemléltetik az esélyek alakulását és a várakozási idő trendjeit.
+
+A valószínűségi grafikonon látható, hogy a rövid távú ingadozások után a görbe egy stabilabb tartomány felé konvergál.
+
+
+![Együttes telitalálatok tapasztalati valószínűsége](combined_probability_plot.png)
+
+A várakozási időt mutató diagramon a szaggatott vonal jelöli az átlagos várakozási időt arra, hogy újból bekövetkezzen egy ilyen esemény, az áttetsző sáv pedig a szórás mértékét, amely a becslés bizonytalanság tartománya.
+
+![Együttes telitalálatok tapasztalati várható ideje években](expected_years_plot.png)
+
+---
+
+### Statisztikai paraméterek összegzése (MLE)
+
+A számítás során rögzített statisztikai mutatók a következők:
+
+$$Átlagos \ együttes \ esély: \ 0.423\%$$
+$$Átlagos \ várható \ ido: \ 4.58 \ év$$
+
+$$Szórás \ (\sigma): \ 0,035\% \ (valószínuség) \ / \ 0.39 \ év \ (idotartam)$$
+
+**Szórási mező határai:**
+
+* Valószínűség esetén: $[0.388\%, \ 0.458\%]$
+
+* Várható időtartam esetén: $[4.18 \text{ év}, \ 4,97 \text{ év}]$
+
+-->
+<hr>
+</section>
+</section>
+<section id="elméleti-megközelítés-és-elméleti-validálás" class="level1">
+<h1>5. Elméleti Megközelítés és Elméleti Validálás</h1>
+<p>A következő részben bemutatom a játékosok számosságának kalkulációját és annak validálását az alapján, hogy a játékban mennyi szelvényt tesznek meg. Ezt a legutóbbi hét számai alapján teszem meg, amelyben mindhárom játékon született telitalálat. A megjátszott szelvények száma befolyásolják ezeket a valószínűségeket, így tudni kell egy jó becslést adni.</p>
 <section id="szükséges-paraméterek-és-az-elvi-lépések" class="level3">
 <h3 class="anchored" data-anchor-id="szükséges-paraméterek-és-az-elvi-lépések">Szükséges paraméterek és az elvi lépések</h3>
-<p>A pontos számításhoz ismerni kell egy kritikus külső változót: a <strong>leadott szelvények számát</strong> (<span class="math inline">\(N\)</span>). A játékkedv hétről hétre változik, és minél nagyobb a játékkedv (azaz minél több szelvényt játszanak meg), statisztikailag annál nagyobb az esélye annak, hogy valaki eltalálja a nyerőszámokat.</p>
+<p>A számításhoz ismerni kell a <strong>leadott szelvények számát</strong> (<span class="math inline">\(N\)</span>).</p>
 <p>A számítás lépései a következők:</p>
 <ol type="1">
 <li><p>Külön-külön meg kell határozni annak az esélyét, hogy egy adott játékon születik legalább egy telitalálatos szelvény.</p></li>
@@ -124,15 +365,11 @@ window.Quarto = {
 </section>
 <section id="a-szelvényszámok-becslésének-módszere" class="level3">
 <h3 class="anchored" data-anchor-id="a-szelvényszámok-becslésének-módszere">A szelvényszámok becslésének módszere</h3>
-<p>A Szerencsejáték Zrt. nem teszi minden héten közzé a feladott szelvények pontos számát. Azt azonban hivatalosan is közlik, hogy az egyes nyerőosztályokban (találatokban) pontosan hány darab nyertes volt. Ebből az adatból statisztikai úton megbecsülhető a megjátszott szelvények száma.</p>
-<p>A számítási módszer alapja a <strong>hipergeometriai eloszlás</strong>, amely megadja egy adott <span class="math inline">\(k\)</span> találat bekövetkezésének elméleti esélyét (<span class="math inline">\(P(k)\)</span>). Ha ismerjük a nyertesek számát, az összes feladott szelvény száma (<span class="math inline">\(N\)</span>) kifejezhető:</p>
+<p>A Szerencsejáték Zrt. nem teszi minden héten közzé a feladott szelvények számát. Azt azonban közlik, hogy az egyes nyerőosztályokban (találatokban) pontosan hány darab nyertes volt. Ebből az adatból statisztikai úton megbecsülhető a megjátszott szelvények száma.</p>
+<p>A számítási módszer alapja a <strong>hipergeometrikus eloszlás</strong>, amely megadja egy adott <span class="math inline">\(k\)</span> találat bekövetkezésének elméleti esélyét (<span class="math inline">\(P(k)\)</span>). Ha ismerjük a nyertesek számát, az összes feladott szelvény száma (<span class="math inline">\(N\)</span>) kifejezhető:</p>
 <p><span class="math display">\[N = \frac{\text{Nyertes szelvények száma}}{P(k)}\]</span></p>
-<p>A nagy számok törvénye alapján minél nagyobb a statisztikai minta, annál pontosabb a becslésünk. A telitalálat ritka, így abból pontatlan becsülni. A legprecízebb eredményt úgy kapjuk, ha a két legkisebb, legnagyobb mintaszámú (tehát leggyakoribb) találatból fejtjük vissza az adatokat, és ezek alapján egy <strong>minimum és maximum szelvényszám intervallumot</strong> határozunk meg.</p>
-<hr>
+<p>A nagy számok törvénye alapján minél nagyobb a statisztikai minta, annál pontosabb a becslés. A telitalálat ritka, így abból pontatlan becsülni. A legprecízebb eredményt úgy kapjuk, ha a két legnagyobb mintaszámú (tehát leggyakoribb) találatból fejtjük vissza az adatokat, és ezek alapján egy <strong>minimum és maximum szelvényszám intervallumot</strong> határozunk meg.</p>
 </section>
-</section>
-<section id="játékonkénti-elemzés-és-visszaszámolás" class="level1">
-<h1>2. Játékonkénti Elemzés és Visszaszámolás</h1>
 <section id="ötöslottó-590" class="level3">
 <h3 class="anchored" data-anchor-id="ötöslottó-590">5️⃣ Ötöslottó (5/90)</h3>
 <p><strong>Heti nyereményadatok:</strong></p>
@@ -276,7 +513,7 @@ window.Quarto = {
 </section>
 <section id="kiértékelés-és-összegzés" class="level3">
 <h3 class="anchored" data-anchor-id="kiértékelés-és-összegzés">Kiértékelés és Összegzés</h3>
-<p>Most, hogy mindhárom játék heti intervallumait és matematikai nyerési esélyeit meghatároztuk, az adatokat összegezve kiszámíthatjuk a főnyeremények megnyerésének játékonkénti esélyét, majd a teljes, együttes valószínűséget is. A játékonkénti esélyeket a korábban ismertetett <span class="math inline">\(1 - (1 - p)^N\)</span> képlettel határoztuk meg.</p>
+<p>Most, hogy mindhárom játék heti intervallumait és nyerési esélyeit meghatároztam, kiszámítható a főnyeremények megnyerésének játékonkénti esélye, majd a teljes, együttes valószínűség is. A játékonkénti esélyeket a korábban ismertetett <span class="math inline">\(1 - (1 - p)^N\)</span> képlettel határozom meg..</p>
 <p><strong>Összesített Táblázat (Heti szelvényszámokkal kalkulálva):</strong></p>
 <table class="caption-top table">
 <colgroup>
@@ -327,230 +564,19 @@ window.Quarto = {
 </section>
 <section id="az-együttes-bekövetkezés-valószínűsége" class="level3">
 <h3 class="anchored" data-anchor-id="az-együttes-bekövetkezés-valószínűsége">Az Együttes Bekövetkezés Valószínűsége</h3>
-<p>Végül, a három független esemény valószínűségét összeszorozva megkapjuk a végső eredményt, azaz annak az esélyét, hogy a vizsgált héten <strong>Magyarországon mindhárom játékban szülessen telitalálat</strong>.</p>
+<p>Végül, a három független esemény valószínűségét összeszorozva megkapjuk a végső eredményt, azaz annak az esélyét, hogy a vizsgált héten <strong>mindhárom játékban született telitalálat</strong>.</p>
 <p><strong>Minimum Részvétel (Worst-case) esetén az esély:</strong> <span class="math display">\[P_{min} = 0.0994 \cdot 0.1220 \cdot 0.2211 \approx 0.00268\]</span> <strong>Eredmény:</strong> Ez <strong>0.268%</strong>, amely arányszámban kifejezve nagyjából <strong>1 a 373-hoz</strong> esélyt jelent.</p>
 <p><strong>Maximum Részvétel (Best-case) esetén az esély:</strong> <span class="math display">\[P_{max} = 0.1076 \cdot 0.1412 \cdot 0.2573 \approx 0.00391\]</span> <strong>Eredmény:</strong> Ez <strong>0.391%</strong>, amely arányszámban kifejezve körülbelül <strong>1 a 256-hoz</strong> esélynek felel meg.</p>
 <hr>
 </section>
 <section id="konklúzió-években-kifejezett-valószínűség" class="level3">
 <h3 class="anchored" data-anchor-id="konklúzió-években-kifejezett-valószínűség">Konklúzió: Években kifejezett valószínűség</h3>
-<p><strong>Hány évente történhet meg ez a csoda?</strong> Tegyük fel, hogy a lottójátékokat továbbra is minden naptári héten (azaz évente 52 alkalommal) megrendezik, és a vizsgált hétről visszafejtett játékkedv stabilan ezen a szinten marad. Ezt a heti esélyekre levetítve a következő időléptékeket kapjuk:</p>
+<p><strong>Milyen időközönként történhet ez meg?</strong> Tegyük fel, hogy a lottójátékokat továbbra is minden naptári héten (azaz évente 52 alkalommal) megrendezik, és a vizsgált hétről visszafejtett játékkedv nagyjából ezen a szinten marad. Ezt a heti esélyekre levetítve a következő időléptékeket kapjuk:</p>
 <ul>
 <li>A <strong>worst-case</strong> forgatókönyvnél (1 a 373-hoz esély) statisztikailag <span class="math inline">\(373 / 52 \approx \textbf{7.2}\)</span> <strong>évente</strong> következik be ez az együttállás.</li>
 <li>A <strong>best-case</strong> forgatókönyvnél (1 a 256-hoz esély) pedig statisztikailag <span class="math inline">\(256 / 52 \approx \textbf{4.9}\)</span> <strong>évente</strong>.</li>
 </ul>
 <p><strong>Összegzés:</strong> Feltételezve a fenti szelvényszámokat, a nagy számok törvénye és a valós, heti húzások számának figyelembevételével átlagosan <strong>5 - 7 évente egyszer</strong> fordul elő olyan hét Magyarországon, amikor az Ötöslottó, a Hatoslottó és a Skandináv lottó sorsolásán is megnyerik a főnyereményt.</p>
-<hr>
-</section>
-</section>
-<section id="empirikus-megközelítés-történelmi-adatokon-alapuló-valószínűségszámítás" class="level1">
-<h1>3. Empirikus megközelítés: Történelmi adatokon alapuló valószínűségszámítás</h1>
-<p>Az előző modell a becsült szelvényszámokra és a kombinatorikai esélyekre támaszkodott. Ebben a fejezetben egy ettől független, tapasztalati (empirikus) megközelítést alkalmazok. Ez a módszer nem a matematikai ideákból indul ki, hanem a ténylegesen megtörtént események gyakoriságát vizsgálja.</p>
-<section id="a-vizsgálat-paraméterei-és-módszertana" class="level3">
-<h3 class="anchored" data-anchor-id="a-vizsgálat-paraméterei-és-módszertana">A vizsgálat paraméterei és módszertana</h3>
-<p>A számítás során az elmúlt 10 teljes naptári év adatait vettem alapul.</p>
-<ul>
-<li><strong>Vizsgált időszak kezdete:</strong> 2016. január 1.</li>
-<li><strong>Vizsgált időszak vége:</strong> 2025. december 31.</li>
-<li><strong>Minta nagysága:</strong> 521 naptári hét.</li>
-</ul>
-<p>A számítás elve a relatív gyakoriság képletén alapul. Egy adott <span class="math inline">\(A\)</span> esemény (telitalálat az adott héten) valószínűségét (<span class="math inline">\(P\)</span>) a bekövetkezések száma (<span class="math inline">\(k\)</span>) és az összes kísérlet (hetek száma, <span class="math inline">\(n\)</span>) hányadosaként határozom meg:</p>
-<p><span class="math display">\[P(A) = \frac{k}{n}\]</span></p>
-<p>A három lottófajta esetében kizárólag azt vizsgáltam, hogy az adott naptári héten történt-e legalább egy telitalálat (függetlenül a nyertes szelvények pontos számától vagy a heti sorsolások gyakoriságától).</p>
-</section>
-<section id="játékonkénti-gyakorisági-adatok" class="level3">
-<h3 class="anchored" data-anchor-id="játékonkénti-gyakorisági-adatok">Játékonkénti gyakorisági adatok</h3>
-</section>
-<section id="ötöslottó-590-1" class="level3">
-<h3 class="anchored" data-anchor-id="ötöslottó-590-1">5️⃣ Ötöslottó (5/90)</h3>
-<p>Az <strong>521</strong> vizsgált hétből <strong>41</strong> alkalommal volt legalább egy telitalálatos szelvény.</p>
-<p><span class="math display">\[P_{ötös} = \frac{41}{521} \approx 0.07869\]</span></p>
-<p>Ez azt jelenti, hogy az Ötöslottón átlagosan <strong>12.7</strong> hetente születik telitalálatos szelvény.</p>
-</section>
-<section id="hatoslottó-645-1" class="level3">
-<h3 class="anchored" data-anchor-id="hatoslottó-645-1">6️⃣ Hatoslottó (6/45)</h3>
-<p>Az <strong>521</strong> vizsgált hétből <strong>83</strong> alkalommal volt legalább egy telitalálatos szelvény.</p>
-<p><span class="math display">\[P_{hatos} = \frac{83}{521} \approx 0.15931\]</span></p>
-<p>Ez azt jelenti, hogy a Hatoslottón átlagosan <strong>6.3</strong> hetente születik telitalálatos szelvény.</p>
-</section>
-<section id="skandináv-lottó-735-1" class="level3">
-<h3 class="anchored" data-anchor-id="skandináv-lottó-735-1">7️⃣ Skandináv lottó (7/35)</h3>
-<p>Az 521 vizsgált hétből <strong>163</strong> alkalommal volt legalább egy telitalálatos szelvény.</p>
-<p><span class="math display">\[P_{skandináv} = \frac{163}{521} \approx 0.31286\]</span></p>
-<p>Ez azt jelenti, hogy a Skandináv lottón átlagosan <strong>3.2</strong> hetente születik telitalálatos szelvény.</p>
-</section>
-<section id="az-együttes-esemény-tapasztalati-valószínűsége" class="level3">
-<h3 class="anchored" data-anchor-id="az-együttes-esemény-tapasztalati-valószínűsége">Az együttes esemény tapasztalati valószínűsége</h3>
-<p>Mivel a három játék sorsolási mechanizmusa és a nyerőszámok kihúzása egymástól függetlenek, az egyazon héten történő együttes telitalálat valószínűségét (<span class="math inline">\(P_{együttes}\)</span>) a fenti relatív gyakoriságok szorzata adja meg:</p>
-<p><span class="math display">\[P_{együttes} = P_{ötös} \cdot P_{hatos} \cdot P_{skandináv}\]</span></p>
-<p><span class="math display">\[P_{együttes} = 0.07869 \cdot 0.15931 \cdot 0.31286 \approx 0.003922\]</span></p>
-<p><span class="math display">\[P_{együttes} \approx 0.3922 \ \%\]</span></p>
-</section>
-<section id="konklúzió" class="level3">
-<h3 class="anchored" data-anchor-id="konklúzió">Konklúzió</h3>
-<p>A történelmi adatok alapján meghatározott esély <strong>0.3922%</strong>, amely törtként kifejezve nagyságrendileg:</p>
-<p><span class="math display">\[1 : 255\]</span></p>
-<p>Ez azt jelenti, hogy a gyakorlatban <strong>átlagosan minden 255. héten</strong> várható olyan esemény, amikor mindhárom lottójátékon születik főnyeremény.</p>
-<p>Figyelembe véve az évi 52 játékhetet, a statisztikai várakozási idő:</p>
-<p><span class="math display">\[T = \frac{255}{52} \approx 4,9 \text{ év}\]</span></p>
-<p><strong>Összegzés:</strong> Feltételezve, hogy a játékkedv és a részvételi hajlandóság a 2016–2025 közötti szinten marad, statisztikailag <strong>minden 5. évben</strong> (pontosabban 4,9 évente) várható olyan hét Magyarországon, amikor az Ötöslottó, a Hatoslottó és a Skandináv lottó egyaránt főnyertest avat.</p>
-<hr>
-</section>
-</section>
-<section id="maximum-likelihood-estimation-mle-bővülő-visszatekintési-ablakos-elemzés" class="level1">
-<h1>4. Maximum Likelihood Estimation (MLE): Bővülő visszatekintési ablakos elemzés</h1>
-<p>A korábbi, rögzített mintavételen alapuló vizsgálatot egy dinamikusabb, úgynevezett <strong>bővülő ablakos (expanding window)</strong> elemzéssel egészítem ki. Ebben a modellben a jelenlegi időpontot rögzített végpontként kezelem, és a statisztikai mintát a múlt irányába folyamatosan növelem. A vizsgálatot 104 hétnél (2 év) kezdem el, és egészen a rendelkezésre álló legkorábbi releváns időpontig, a 2007. év 30. hetéig haladok vissza az időben.</p>
-<p>Ez a megközelítés rávilágít arra, hogy a historikus adatok mélysége hogyan befolyásolja az együttes nyerési esély becslését, és vizuálisan is szemlélteti a valószínűség stabilitását vagy ingadozását a vizsgált időtáv függvényében.</p>
-<section id="a-számítás-módszertana" class="level3">
-<h3 class="anchored" data-anchor-id="a-számítás-módszertana">A számítás módszertana</h3>
-<p>A számítás során minden egyes lépésben egyre nagyobb <span class="math inline">\(n\)</span> heti adatmennyiséggel kalkulálok, ahol <span class="math inline">\(n\)</span> értéke 104-től indulva növekszik. Az együttes esélyt (<span class="math inline">\(P_{c}\)</span>) minden ablakméretre az egyedi tapasztalati gyakoriságok szorzataként határozom meg:</p>
-<p><span class="math display">\[P_{c}(n) = \bar{p}_{ötös, n} \cdot \bar{p}_{hatos, n} \cdot \bar{p}_{skandináv, n}\]</span></p>
-<p>Ahol <span class="math inline">\(\bar{p}_{n}\)</span> az adott játék telitalálati gyakorisága az utolsó <span class="math inline">\(n\)</span> hét adatai alapján. Ebből a várható várakozási idő (<span class="math inline">\(E_{y}\)</span>) a következő ilyen eseményig években kifejezve:</p>
-<p><span class="math display">\[E_{y}(n) = \frac{1}{P_{c}(n) \cdot 52}\]</span></p>
-</section>
-<section id="a-historikus-adatok-szélsőértékei" class="level3">
-<h3 class="anchored" data-anchor-id="a-historikus-adatok-szélsőértékei">A historikus adatok szélsőértékei</h3>
-<p>Azonosítottam azt a két pontot, amelyek mentén a statisztikai esélyek a legszélsőségesebbek.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Paraméter</th>
-<th style="text-align: left;">Maximális esély (2008. 38. hét)</th>
-<th style="text-align: left;">Minimális esély (2023. 31. hét)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><strong>Együttes telitalálat esélye</strong></td>
-<td style="text-align: left;"><span class="math inline">\(0,458\%\)</span></td>
-<td style="text-align: left;"><span class="math inline">\(0,264\%\)</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><strong>Várható várakozási idő</strong></td>
-<td style="text-align: left;"><span class="math inline">\(4,20 \text{ év}\)</span></td>
-<td style="text-align: left;"><span class="math inline">\(7,28 \text{ év}\)</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Visszatekintési ablak mérete</strong></td>
-<td style="text-align: left;"><span class="math inline">\(918 \text{ hét}\)</span></td>
-<td style="text-align: left;"><span class="math inline">\(142 \text{ hét}\)</span></td>
-</tr>
-</tbody>
-</table>
-<p>A maximális esélyt egy széles, 918 hetes ablak adja (visszanyúlva 2008-ig), míg a minimális esélyt egy szűkebb, az utolsó 142 hét adatát tartalmazó minta eredményezi.</p>
-</section>
-<section id="vizuális-elemzés" class="level3">
-<h3 class="anchored" data-anchor-id="vizuális-elemzés">Vizuális elemzés</h3>
-<p>Az alábbi grafikonok szemléltetik az esélyek alakulását és a várakozási idő trendjeit.</p>
-<p>[Grafikon helyőrző: Együttes és egyedi telitalálatok tapasztalati valószínűsége (MLE)]</p>
-<p>A valószínűségi grafikonon látható, hogy a rövid távú ingadozások után a görbe egy stabilabb tartomány felé konvergál.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="combined_probability_plot.png" class="img-fluid figure-img"></p>
-<figcaption>Együttes telitalálatok tapasztalati valószínűsége</figcaption>
-</figure>
-</div>
-<p>A várakozási időt mutató diagramon a szaggatott vonal jelöli az átlagos várakozási időt, az áttetsző sáv pedig a szórás mértékét, amely megmutatja a becslés bizonytalanság tartománya.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="expected_years_plot.png" class="img-fluid figure-img"></p>
-<figcaption>Együttes telitalálatok tapasztalati várható ideje években</figcaption>
-</figure>
-</div>
-<hr>
-</section>
-<section id="statisztikai-paraméterek-összegzése-mle" class="level3">
-<h3 class="anchored" data-anchor-id="statisztikai-paraméterek-összegzése-mle">Statisztikai paraméterek összegzése (MLE)</h3>
-<p>A számítás során rögzített statisztikai mutatók a következők:</p>
-<p><span class="math display">\[Átlagos \ együttes \ esély: \ 0.357\%\]</span> <span class="math display">\[Átlagos \ várható \ ido: \ 5.64 \ év\]</span></p>
-<p><span class="math display">\[Szórás \ (\sigma): \ 0,042\% \ (valószínuség) \ / \ 0.86 \ év \ (idotartam)\]</span></p>
-<p><strong>Szórási mező határai:</strong></p>
-<ul>
-<li><p>Valószínűség esetén: <span class="math inline">\([0.358\%, \ 0.434\%]\)</span></p></li>
-<li><p>Várható időtartam esetén: <span class="math inline">\([4.20 \text{ év}, \ 6,28 \text{ év}]\)</span></p></li>
-</ul>
-<p>Az elemzés alátámasztja, hogy a telitalálatok együttes bekövetkezése statisztikailag kódolva van a rendszerben, és a tapasztalatok illeszkednek a historikus adatok által kijelölt szórási tartományba.</p>
-</section>
-</section>
-<section id="historikus-tényadatok-megtörtént-e-már-valaha-a-valóságban" class="level1">
-<h1>5. Historikus Tényadatok: Megtörtént-e már valaha a valóságban?</h1>
-<p>Az elméleti számítások és az ablakos becsléseken túl érdemes vizsgálni, hogy a valóságban hányszor fordult elő a három játék együttes telitalálata.</p>
-<p>Mivel a Skandináv lottó (amely a három játék közül a legfiatalabb) 1999. legvégén indult útjára, a közös halmazt innentől számítom</p>
-<section id="a-nyers-történelmi-adatok" class="level3">
-<h3 class="anchored" data-anchor-id="a-nyers-történelmi-adatok">A nyers történelmi adatok</h3>
-<p>A három lottójáték közös történelme során összesen <strong>1384 teljes naptári hetet</strong> ölelt fel az adatbázis (közel 27 évnyi sorsolást).</p>
-<p>A szűrési feltételek alapján olyan heteket kerestem, ahol a hivatalos nyereményjegyzék szerint az Ötöslottón, a Hatoslottón és a Skandináv lottón is játszottak telitalálatos szelvényt.</p>
-<p>A lottótörténelem 1384 közös hete alatt <strong>8 alkalommal</strong> fordult elő ez az esemény.</p>
-</section>
-<section id="az-együttes-telitalálatok-historikus-időpontjai" class="level3">
-<h3 class="anchored" data-anchor-id="az-együttes-telitalálatok-historikus-időpontjai">Az együttes telitalálatok historikus időpontjai</h3>
-<p>Az alábbi heteken játszottak mindhárom lottón telitalálatos szelvényt:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Sorszám</th>
-<th style="text-align: center;">Év</th>
-<th style="text-align: center;">Naptári Hét</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">1.</td>
-<td style="text-align: center;">2000.</td>
-<td style="text-align: center;">31. hét</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">2.</td>
-<td style="text-align: center;">2006.</td>
-<td style="text-align: center;">9. hét</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">3.</td>
-<td style="text-align: center;">2007.</td>
-<td style="text-align: center;">18. hét</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">4.</td>
-<td style="text-align: center;">2009.</td>
-<td style="text-align: center;">50. hét</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">5.</td>
-<td style="text-align: center;">2012.</td>
-<td style="text-align: center;">39. hét</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">6.</td>
-<td style="text-align: center;">2018.</td>
-<td style="text-align: center;">22. hét</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">7.</td>
-<td style="text-align: center;">2022.</td>
-<td style="text-align: center;">2. hét</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">8.</td>
-<td style="text-align: center;">2026.</td>
-<td style="text-align: center;">16. hét</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="abszolút-historikus-valószínűség" class="level3">
-<h3 class="anchored" data-anchor-id="abszolút-historikus-valószínűség">Abszolút historikus valószínűség</h3>
-<p>Ezen adatok birtokában megállapítható a tapasztalati valószínűség:</p>
-<p><span class="math display">\[P_{historikus} = \frac{\text{Bekövetkezések száma}}{\text{Összes vizsgált hét}} = \frac{8}{1384} \approx 0,00578\]</span></p>
-<p>Ez százalékosan kifejezve <strong>0,578%</strong>, ami nagyságrendileg:</p>
-<p><span class="math display">\[1 : 173\]</span></p>
-<p>Magyarán átlagosan minden 173. héten történik meg, hogy mindhárom lottón legyen telitalálatos szelvény.</p>
-<p>Naptári évekre visszabontva a tényleges történelmi várakozási idő:</p>
-<p><span class="math display">\[E_{y} = \frac{173}{52} \approx 3,33 \text{ év}\]</span></p>
 </section>
 </section>
 
