@@ -77,10 +77,11 @@ window.Quarto = {
 
 
 
-<section id="statisztikai-elemzés-együttes-lottónyeremények-esélye-magyarországon" class="level1">
-<h1>Statisztikai Elemzés: Együttes Lottónyeremények Esélye Magyarországon</h1>
-<section id="dilemma" class="level2">
-<h2 class="anchored" data-anchor-id="dilemma">Dilemma</h2>
+<section id="együttes-lottónyeremények-esélye-magyarországon" class="level1">
+<h1>Együttes Lottónyeremények Esélye Magyarországon</h1>
+</section>
+<section id="dilemma" class="level1">
+<h1>1. Dilemma</h1>
 <p>A Szerencsejáték Zrt. három játékában is egyazon héten született telitalálatos szelvény. Ezek:</p>
 <table class="caption-top table">
 <thead>
@@ -130,8 +131,8 @@ window.Quarto = {
 <hr>
 </section>
 </section>
-<section id="játékonkénti-elemzés-és-visszaszámolás" class="level2">
-<h2 class="anchored" data-anchor-id="játékonkénti-elemzés-és-visszaszámolás">Játékonkénti Elemzés és Visszaszámolás</h2>
+<section id="játékonkénti-elemzés-és-visszaszámolás" class="level1">
+<h1>2. Játékonkénti Elemzés és Visszaszámolás</h1>
 <section id="ötöslottó-590" class="level3">
 <h3 class="anchored" data-anchor-id="ötöslottó-590">5️⃣ Ötöslottó (5/90)</h3>
 <p><strong>Heti nyereményadatok:</strong></p>
@@ -273,9 +274,8 @@ window.Quarto = {
 <p><span class="math display">\[\text{Minimum, maximum}\]</span> <span class="math display">\[[840\ 000, \ 1\ 000\ 000]\]</span></p>
 <hr>
 </section>
-</section>
-<section id="kiértékelés-és-összegzés" class="level2">
-<h2 class="anchored" data-anchor-id="kiértékelés-és-összegzés">Kiértékelés és Összegzés</h2>
+<section id="kiértékelés-és-összegzés" class="level3">
+<h3 class="anchored" data-anchor-id="kiértékelés-és-összegzés">Kiértékelés és Összegzés</h3>
 <p>Most, hogy mindhárom játék heti intervallumait és matematikai nyerési esélyeit meghatároztuk, az adatokat összegezve kiszámíthatjuk a főnyeremények megnyerésének játékonkénti esélyét, majd a teljes, együttes valószínűséget is. A játékonkénti esélyeket a korábban ismertetett <span class="math inline">\(1 - (1 - p)^N\)</span> képlettel határoztuk meg.</p>
 <p><strong>Összesített Táblázat (Heti szelvényszámokkal kalkulálva):</strong></p>
 <table class="caption-top table">
@@ -324,6 +324,7 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
+</section>
 <section id="az-együttes-bekövetkezés-valószínűsége" class="level3">
 <h3 class="anchored" data-anchor-id="az-együttes-bekövetkezés-valószínűsége">Az Együttes Bekövetkezés Valószínűsége</h3>
 <p>Végül, a három független esemény valószínűségét összeszorozva megkapjuk a végső eredményt, azaz annak az esélyét, hogy a vizsgált héten <strong>Magyarországon mindhárom játékban szülessen telitalálat</strong>.</p>
@@ -342,8 +343,8 @@ window.Quarto = {
 <hr>
 </section>
 </section>
-<section id="empirikus-megközelítés-történelmi-adatokon-alapuló-valószínűségszámítás" class="level2">
-<h2 class="anchored" data-anchor-id="empirikus-megközelítés-történelmi-adatokon-alapuló-valószínűségszámítás">Empirikus megközelítés: Történelmi adatokon alapuló valószínűségszámítás</h2>
+<section id="empirikus-megközelítés-történelmi-adatokon-alapuló-valószínűségszámítás" class="level1">
+<h1>3. Empirikus megközelítés: Történelmi adatokon alapuló valószínűségszámítás</h1>
 <p>Az előző modell a becsült szelvényszámokra és a kombinatorikai esélyekre támaszkodott. Ebben a fejezetben egy ettől független, tapasztalati (empirikus) megközelítést alkalmazok. Ez a módszer nem a matematikai ideákból indul ki, hanem a ténylegesen megtörtént események gyakoriságát vizsgálja.</p>
 <section id="a-vizsgálat-paraméterei-és-módszertana" class="level3">
 <h3 class="anchored" data-anchor-id="a-vizsgálat-paraméterei-és-módszertana">A vizsgálat paraméterei és módszertana</h3>
@@ -396,8 +397,8 @@ window.Quarto = {
 <hr>
 </section>
 </section>
-<section id="maximum-likelihood-estimation-mle-bővülő-visszatekintési-ablakos-elemzés" class="level2">
-<h2 class="anchored" data-anchor-id="maximum-likelihood-estimation-mle-bővülő-visszatekintési-ablakos-elemzés">Maximum Likelihood Estimation (MLE): Bővülő visszatekintési ablakos elemzés</h2>
+<section id="maximum-likelihood-estimation-mle-bővülő-visszatekintési-ablakos-elemzés" class="level1">
+<h1>4. Maximum Likelihood Estimation (MLE): Bővülő visszatekintési ablakos elemzés</h1>
 <p>A korábbi, rögzített mintavételen alapuló vizsgálatot egy dinamikusabb, úgynevezett <strong>bővülő ablakos (expanding window)</strong> elemzéssel egészítem ki. Ebben a modellben a jelenlegi időpontot rögzített végpontként kezelem, és a statisztikai mintát a múlt irányába folyamatosan növelem. A vizsgálatot 104 hétnél (2 év) kezdem el, és egészen a rendelkezésre álló legkorábbi releváns időpontig, a 2007. év 30. hetéig haladok vissza az időben.</p>
 <p>Ez a megközelítés rávilágít arra, hogy a historikus adatok mélysége hogyan befolyásolja az együttes nyerési esély becslését, és vizuálisan is szemlélteti a valószínűség stabilitását vagy ingadozását a vizsgált időtáv függvényében.</p>
 <section id="a-számítás-módszertana" class="level3">
@@ -476,8 +477,8 @@ window.Quarto = {
 <p>Az elemzés alátámasztja, hogy a telitalálatok együttes bekövetkezése statisztikailag kódolva van a rendszerben, és a tapasztalatok illeszkednek a historikus adatok által kijelölt szórási tartományba.</p>
 </section>
 </section>
-<section id="historikus-tényadatok-megtörtént-e-már-valaha-a-valóságban" class="level2">
-<h2 class="anchored" data-anchor-id="historikus-tényadatok-megtörtént-e-már-valaha-a-valóságban">Historikus Tényadatok: Megtörtént-e már valaha a valóságban?</h2>
+<section id="historikus-tényadatok-megtörtént-e-már-valaha-a-valóságban" class="level1">
+<h1>5. Historikus Tényadatok: Megtörtént-e már valaha a valóságban?</h1>
 <p>Az elméleti számítások és az ablakos becsléseken túl érdemes vizsgálni, hogy a valóságban hányszor fordult elő a három játék együttes telitalálata.</p>
 <p>Mivel a Skandináv lottó (amely a három játék közül a legfiatalabb) 1999. legvégén indult útjára, a közös halmazt innentől számítom</p>
 <section id="a-nyers-történelmi-adatok" class="level3">
@@ -550,7 +551,6 @@ window.Quarto = {
 <p>Magyarán átlagosan minden 173. héten történik meg, hogy mindhárom lottón legyen telitalálatos szelvény.</p>
 <p>Naptári évekre visszabontva a tényleges történelmi várakozási idő:</p>
 <p><span class="math display">\[E_{y} = \frac{173}{52} \approx 3,33 \text{ év}\]</span></p>
-</section>
 </section>
 </section>
 
