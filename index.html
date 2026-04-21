@@ -190,7 +190,12 @@ window.Quarto = {
 <h1>3. Az Eddigi Játékoskedv és a Telitalálatok ábrázolása</h1>
 <p>Érdemes vizuálisan megtekinteni, hogy adott lottójátékban milyen gyakran, milyen sűrűn születik telitalálatos szelvény. Ezt az alábbi ábra szemlélteti azon becsült értékekkel együttesen, hogy adott héten mennyi szelvényt játszhattak meg a játékosok.</p>
 <p>A Szerencsejáték Zrt. kizárólag azt teszi közzé, hogy adott találat mellett hány nyerő szelvény volt (pl. x darab 2-es találat, y darab 3-as találat, z darab 4-es találat, stb.</p>
-<p>Ebből viszont már lehet következtetni arra, hogy összesen kb. mennyi szelvényt játszottak meg a játékosok. Ezen következtetések minimum és maximum értékeit jelenítettem meg az alábbi sávdiagramban, feltüntetve benne * a mindenkori telitalálatos szelvények előfordulását, * a top 5 legnagyobb nyereményt, * azon események időpontját, amikor mindhárom játékban volt telitalálatos szelvény.</p>
+<p>Ebből viszont már lehet következtetni arra, hogy összesen kb. mennyi szelvényt játszottak meg a játékosok. Ezen következtetések minimum és maximum értékeit jelenítettem meg az alábbi sávdiagramban, feltüntetve benne</p>
+<ul>
+<li>a mindenkori telitalálatos szelvények előfordulását,</li>
+<li>a top 5 legnagyobb nyereményt,</li>
+<li>azon események időpontját, amikor mindhárom játékban volt telitalálatos szelvény.</li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="becsult_heti_szelvenyok_atlagokkal.png" class="img-fluid figure-img"></p>
@@ -266,7 +271,11 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="paraméterek-összegzése">Paraméterek összegzése</h3>
 <p>Kizárólag a 10. évet követő, stabil historikus időszakot alapul véve a magyar lottótörténelem kumulatív mutatói a három lottójáték együttes telitalálatára a következők:</p>
 <p><span class="math display">\[Átlagos \ stabilizált \ esély: \ 0.595\%\]</span> <span class="math display">\[Átlagos \ várható \ ido: \ 3.27 \ év\]</span></p>
-<p><strong>Szórási mező határai (<span class="math inline">\(\pm 1 \sigma\)</span>):</strong> * Valószínűség esetén: <span class="math inline">\([0.533\%, \ 0.657\%]\)</span> * Várható időtartam esetén: <span class="math inline">\([2.95 \text{ év}, \ 3.59 \text{ év}]\)</span></p>
+<p><strong>Szórási mező határai (<span class="math inline">\(\pm 1 \sigma\)</span>):</strong></p>
+<ul>
+<li>Valószínűség esetén: <span class="math inline">\([0.533\%, \ 0.657\%]\)</span></li>
+<li>Várható időtartam esetén: <span class="math inline">\([2.95 \text{ év}, \ 3.59 \text{ év}]\)</span></li>
+</ul>
 </section>
 <section id="a-tripla-telitalálat-időpontjai-összevetve-a-magas-nyereményekkel-és-a-tripla-telitalálat-kumulatív-valószínűségével" class="level3">
 <h3 class="anchored" data-anchor-id="a-tripla-telitalálat-időpontjai-összevetve-a-magas-nyereményekkel-és-a-tripla-telitalálat-kumulatív-valószínűségével">A Tripla Telitalálat Időpontjai, Összevetve a Magas Nyereményekkel és a Tripla Telitalálat Kumulatív Valószínűségével</h3>
@@ -354,7 +363,8 @@ $$Szórás \ (\sigma): \ 0,035\% \ (valószínuség) \ / \ 0.39 \ év \ (idotart
 <p>A számítás lépései a következők:</p>
 <ol type="1">
 <li><p>Külön-külön meg kell határozni annak az esélyét, hogy egy adott játékon születik legalább egy telitalálatos szelvény.</p></li>
-<li><p>Ha <span class="math inline">\(p\)</span> a telitalálat esélye egyetlen szelvénnyel, akkor annak az esélye, hogy egyetlen szelvény <strong>nem</strong> nyer: <span class="math inline">\(1 - p\)</span>.</p></li>
+<li><p>Ha <span class="math inline">\(p\)</span> a telitalálat esélye egyetlen szelvénnyel, akkor annak az esélye, hogy egyetlen szelvény <strong>nem</strong> nyer:</p>
+<p><span class="math display">\[1 - p\]</span></p></li>
 <li><p>Annak az esélye, hogy az összes eladott <span class="math inline">\(N\)</span> darab szelvény közül <strong>egyik sem</strong> nyer (vagyis nincs telitalálat az országban):</p>
 <p><span class="math display">\[(1 - p)^N\]</span></p></li>
 <li><p>Ebből következik a komplementer (kiegészítő) esemény: annak a valószínűsége, hogy <strong>legalább egy</strong> telitalálat születik az adott játékon:</p>
@@ -577,6 +587,134 @@ $$Szórás \ (\sigma): \ 0,035\% \ (valószínuség) \ / \ 0.39 \ év \ (idotart
 <li>A <strong>best-case</strong> forgatókönyvnél (1 a 256-hoz esély) pedig statisztikailag <span class="math inline">\(256 / 52 \approx \textbf{4.9}\)</span> <strong>évente</strong>.</li>
 </ul>
 <p><strong>Összegzés:</strong> Feltételezve a fenti szelvényszámokat, a nagy számok törvénye és a valós, heti húzások számának figyelembevételével átlagosan <strong>5 - 7 évente egyszer</strong> fordul elő olyan hét Magyarországon, amikor az Ötöslottó, a Hatoslottó és a Skandináv lottó sorsolásán is megnyerik a főnyereményt.</p>
+</section>
+</section>
+<section id="statisztikai-próbák" class="level1">
+<h1>6. Statisztikai Próbák</h1>
+<section id="hipotézisvizsgálat-és-validáció-a-legutóbbi-együttes-telitalálat-statisztikai-anatómiája" class="level2">
+<h2 class="anchored" data-anchor-id="hipotézisvizsgálat-és-validáció-a-legutóbbi-együttes-telitalálat-statisztikai-anatómiája">Hipotézisvizsgálat és Validáció: A legutóbbi együttes telitalálat statisztikai anatómiája</h2>
+<p>A historikus átlagok és a kumulatív modellek egyértelműen bizonyították, hogy a szimultán telitalálat matematikailag determinált esemény. Felmerül azonban a kritikus statisztikai kérdés: mennyire tekinthető validnak, “életszerűnek” vagy éppen gyanús anomáliának a legutóbbi, 2026. 16. hetén bekövetkezett együttes főnyeremény?</p>
+<p>A kérdés megválaszolásához a következtető statisztika (inferential statistics) legfejlettebb próbáit alkalmaztam. A nullhipotézis (<span class="math inline">\(H_0\)</span>) szerint a legutóbbi esemény a lottópiac normál, véletlenszerű működésének az eredménye. A szignifikanciaszintet a tudományos standardnak megfelelően <span class="math inline">\(\alpha = 0,05\)</span> (<span class="math inline">\(5\%\)</span>) értékben határoztam meg.</p>
+<section id="várakozási-idők-és-gyakoriságok-exponenciális-és-poisson-próba" class="level3">
+<h3 class="anchored" data-anchor-id="várakozási-idők-és-gyakoriságok-exponenciális-és-poisson-próba">Várakozási idők és Gyakoriságok (Exponenciális és Poisson-próba)</h3>
+<p>Első lépésben az események között eltelt időt és a gyakoriságot vizsgáltam meg az úgynevezett Poisson-folyamat keretein belül. A 2022-es előző és a 2026-os vizsgált találat között pontosan <strong>218 lottóhét (4,19 év)</strong> telt el, míg a hosszú távú historikus rátánk (<span class="math inline">\(\lambda\)</span>) <strong>0,30 esemény/év</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="plot_1_exp_poisson.png" class="img-fluid figure-img"></p>
+<figcaption>Exponenciális Várakozási Idő Eloszlása és Poisson Eseménygyakoriság</figcaption>
+</figure>
+</div>
+<p><strong>Exponenciális Várakozási Idő Próba:</strong> Mekkora a valószínűsége annak, hogy egy <span class="math inline">\(\lambda = 0.30\)</span> rátájú folyamatban legalább 4.19 évet kell várni a következő eseményre? <span class="math display">\[P(T \ge 4.19) = e^{-\lambda \cdot t} = e^{-0.30 \cdot 4.19} \approx 0.284\]</span> A kapott <span class="math inline">\(p\)</span>-érték <strong>28.4%</strong>. Ez rendkívül erős eredmény, amely messze a <span class="math inline">\(0.05\)</span>-ös kritikus határérték felett van. Statisztikailag teljesen valid, hogy több mint 4 évet kellett várni erre az együttállásra.</p>
+<p><strong>Poisson Gyakorisági Próba:</strong> Mi az esélye, hogy egy 4.19 éves ablakban pontosan 1 darab esemény történik, amikor a várható érték <span class="math inline">\(1.257\)</span>? <span class="math display">\[P(X = 1) = \frac{1.257^1 \cdot e^{-1.257}}{1!} \approx 0.358\]</span> A <span class="math inline">\(p\)</span>-érték itt <strong>35.8%</strong>. Ez a valószínűségi maximum: matematikailag ez volt a legéletszerűbb kimenetel az adott időtávon.</p>
+</section>
+<section id="kísérletsorozat-elemzés-binomiális-próba" class="level3">
+<h3 class="anchored" data-anchor-id="kísérletsorozat-elemzés-binomiális-próba">Kísérletsorozat-elemzés (Binomiális Próba)</h3>
+<p>Lépjünk szintet, és tekintsük a legutóbbi két esemény között eltelt 218 hetet egy 218 lépéses Bernoulli-kísérletsorozatnak, ahol a “siker” (a 3-as együttállás) historikus valószínűsége hétről hétre konstans <span class="math inline">\(p = 0.00578\)</span> (<span class="math inline">\(0.578\%\)</span>).</p>
+<p>A statisztikai kérdés: <em>Ha vakon kiválasztunk a naptárból egy 218 hetes időszakot, mekkora az esélye annak, hogy ott legalább egy együttes telitalálat történjen?</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="plot_2_binomial.png" class="img-fluid figure-img"></p>
+<figcaption>Binomiális Eloszlás (Telitalálatok 218 hét alatt)</figcaption>
+</figure>
+</div>
+<p><span class="math display">\[P(X \ge 1) = 1 - P(X = 0) = 1 - \binom{218}{0} p^0 (1-p)^{218} \approx 0.7174\]</span></p>
+<p><strong>Eredmény:</strong> Az esély <strong>71.74%</strong>. A számítás rávilágít, hogy egyáltalán nem “csoda”, hogy a 218 hetes ablak végén bekövetkezett a nyeremény. A valós anomália az lett volna (mindössze 28% eséllyel), ha ebben az egész négyéves ciklusban egyszer sem történik együttállás. A nullhipotézist (<span class="math inline">\(H_0\)</span>) megtartjuk.</p>
+</section>
+<section id="időbeli-linearitás-kolmogorov-szmirnov-illeszkedésvizsgálat" class="level3">
+<h3 class="anchored" data-anchor-id="időbeli-linearitás-kolmogorov-szmirnov-illeszkedésvizsgálat">Időbeli linearitás (Kolmogorov-Szmirnov Illeszkedésvizsgálat)</h3>
+<p>Mivel a lottósorsolások (ideális esetben) memóriamentesek, az együttes telitalálatoknak hosszútávon egyenletesen kell eloszlaniuk az idővonalon. Ezt a feltevést az úgynevezett egytengelyű Kolmogorov-Szmirnov (K-S) próbával ellenőriztem, amely a valóságban megfigyelt eseményeloszlást (Empirikus Eloszlásfüggvény - EDF) hasonlítja össze a tökéletesen egyenletes matematikaival (Kumulatív Eloszlásfüggvény - CDF).</p>
+<p>[Grafikon helyőrző: Kolmogorov-Szmirnov Illeszkedésvizsgálat] <img src="plot_3_ks_test.png" class="img-fluid" alt="Kolmogorov-Smirnov Illeszkedésvizsgálat"></p>
+<p>A K-S próba a két görbe közötti legnagyobb eltérést (D-statisztika) méri. A D-érték kiszámítása során kapott <strong><span class="math inline">\(p\)</span>-érték meghaladja a <span class="math inline">\(0.05\)</span>-ös küszöböt</strong>, ami vizuálisan is megfigyelhető: a lila lépcsősfüggvény szorosan “öleli” a szaggatott ideális vonalat. <strong>Konklúzió:</strong> A rendszerben nincs nyoma statisztikai “sűrűsödésnek” vagy “kiszáradásnak”. A 8 történelmi esemény – beleértve a legutóbbi 2026-os találatot is – egyenletesen szóródik szét a 27 év alatt.</p>
+<hr>
+</section>
+</section>
+<section id="monte-carlo-validáció-brute-force-mikroszimuláció-valós-szelvénygenerálással" class="level2">
+<h2 class="anchored" data-anchor-id="monte-carlo-validáció-brute-force-mikroszimuláció-valós-szelvénygenerálással">Monte Carlo Validáció: Brute-Force Mikroszimuláció Valós Szelvénygenerálással</h2>
+<p>A kutatás további validációjaként egy olyan “Brute-Force” (nyers erejű) algoritmust is lefuttattok, amely mellőzi az elméleti eloszlást, és fizikai szinten, <strong>egyenként generálja le és sorsolja ki a lottószelvényeket.</strong></p>
+<p>A modell az empirikusan visszafejtett szelvényszámok (átlagosan heti <span class="math inline">\(4.3\)</span> millió Ötöslottó, <span class="math inline">\(1.9\)</span> millió Hatoslottó és <span class="math inline">\(1.4\)</span> millió Skandináv lottó szelvény) alapján egyenletes eloszlású véletlenszám-generátorral (PRNG) modellezte az elmúlt 1384 hetet, párhuzamosított processzormagokon (multiprocessing). Ez univerzumonként mintegy 10.6 milliárd fizikai szelvény memóriában történő legenerálását és ellenőrzését jelentette.</p>
+<section id="szimulációs-eredmények-és-konklúzió" class="level3">
+<h3 class="anchored" data-anchor-id="szimulációs-eredmények-és-konklúzió">Szimulációs Eredmények és Konklúzió</h3>
+<p>Az alábbi hisztogram a fizikai szelvénygeneráláson alapuló 10 000 alternatív univerzum kimenetelét ábrázolja:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="plot_universe_simulation_with_averages.png" class="img-fluid figure-img"></p>
+<figcaption>Agent-Based Lottószimuláció: 10 000 Alternatív Univerzum Történelme</figcaption>
+</figure>
+</div>
+<p><strong>A szimuláció statisztikái:</strong></p>
+<ul>
+<li><strong>Szimulált Átlag (<span class="math inline">\(\mu\)</span>):</strong> <span class="math inline">\(9.77\)</span> alkalom</li>
+<li><strong>Szimulált Medián:</strong> <span class="math inline">\(10.0\)</span> alkalom</li>
+<li><strong>95%-os Konfidencia Intervallum (CI):</strong> <span class="math inline">\([4, 16]\)</span> alkalom</li>
+<li><strong>Univerzumok aránya pontosan 8 találattal:</strong> <span class="math inline">\(12.18\%\)</span></li>
+<li><strong>A Mi Valóságunk (Tényleges együttes telitalálatok):</strong> <span class="math inline">\(8\)</span> alkalom</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>A Validáció Eredménye:</strong> A fizikai szelvénygenerálás ugyanazt a haranggörbét és átlagot (<span class="math inline">\(\mu \approx 9,7\)</span>) adta vissza, mint az elméleti modell. A valóság (8 találat) belesimul a sűrűségfüggvény centrumába, a leggyakoribb kimenetelek ~<span class="math inline">\(12\%\)</span>-os metszetébe.</p>
+</blockquote>
+<hr>
+<hr>
+</section>
+</section>
+<section id="feltételes-idősoros-elemzés-és-k-s-próba" class="level2">
+<h2 class="anchored" data-anchor-id="feltételes-idősoros-elemzés-és-k-s-próba">Feltételes Idősoros Elemzés és K-S Próba</h2>
+<p>A 8 találat puszta darabszámának igazolása után a kutatás utolsó lépéseként megvizsgáltam az események <strong>belső időszerkezetét</strong>. Elszigetelve a szimulációból azokat a párhuzamos univerzumokat, ahol pontosan 8 telitalálat született, összevetettem azok átlagos időbeli eloszlását a mi valóságunkkal.</p>
+<p>Az alábbi ábra a szimulált és a valós események idővonalát veti össze.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="timeline_comparison_with_ks_output.png" class="img-fluid figure-img"></p>
+<figcaption>Együttes Telitalálatok Időbeli Eloszlása: Szimuláció vs.&nbsp;Valóság (1999 - Napjainkig)</figcaption>
+</figure>
+</div>
+<section id="vizuális-értelmezés-és-statisztikai-validáció" class="level3">
+<h3 class="anchored" data-anchor-id="vizuális-értelmezés-és-statisztikai-validáció">Vizuális Értelmezés és Statisztikai Validáció</h3>
+<ul>
+<li><strong>A valóság ritmusa (Piros pontok):</strong> A történelmünkben megfigyelhetők rövidebb (1-2 év) és hosszabb (akár 4.7 év) időközök is a találatok között.</li>
+<li><strong>Szimulált Átlag (Lila pontok):</strong> Egy ideális 8-találatos univerzumban a nagy számok törvénye kiegyenlíti a távolságokat, átlagosan 3-4 évenkénti bekövetkezést prognosztizálva.</li>
+<li><strong>Összevetés:</strong> A szürke összekötő vonalak vizuálisan is igazolják a konvergenciát. A mi valós idővonalunk minimális oszcillációval követi a szimulált elvárást.</li>
+</ul>
+<p>A vizuális hasonlóság megerősítésére a valós események idővonalát és a szimulált események átlagos idővonalát egy <strong>Kétmintás Kolmogorov-Szmirnov (K-S) próbának</strong> vetettem alá.</p>
+</section>
+<section id="kétmintás-kolmogorov-szmirnov-k-s-próba-eredményei" class="level3">
+<h3 class="anchored" data-anchor-id="kétmintás-kolmogorov-szmirnov-k-s-próba-eredményei">Kétmintás Kolmogorov-Szmirnov (K-S) Próba Eredményei</h3>
+<p><strong>Célkitűzés:</strong> A valós együttes telitalálatok időbeli eloszlásának statisztikai összevetése az ideális (szimulált) 8-találatos univerzumok átlagos idővonalával.</p>
+<section id="vizsgálati-paraméterek-és-eredmények" class="level4">
+<h4 class="anchored" data-anchor-id="vizsgálati-paraméterek-és-eredmények">Vizsgálati Paraméterek és Eredmények</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Metrika</th>
+<th style="text-align: left;">Mért / Számított Érték</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Vizsgált minta 1</strong> (Valóság)</td>
+<td style="text-align: left;"><span class="math inline">\(N = 8\)</span> esemény</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Vizsgált minta 2</strong> (Szimulált átlag)</td>
+<td style="text-align: left;"><span class="math inline">\(N = 8\)</span> esemény</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>D-statisztika</strong> (Legnagyobb eltérés)</td>
+<td style="text-align: left;"><span class="math inline">\(D = 0.2500\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong><span class="math inline">\(p\)</span>-érték</strong> (Szignifikanciaszint)</td>
+<td style="text-align: left;"><span class="math inline">\(\mathbf{p = 0.9801}\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="statisztikai-konklúzió" class="level4">
+<h4 class="anchored" data-anchor-id="statisztikai-konklúzió">Statisztikai Konklúzió</h4>
+<blockquote class="blockquote">
+<p><strong>A nullhipotézist (<span class="math inline">\(H_0\)</span>) MEGTARTJUK.</strong></p>
+<p>Mivel a <span class="math inline">\(p\)</span>-érték (<span class="math inline">\(09801\)</span>) magas és bőven meghaladja a standard <span class="math inline">\(\alpha = 0.05\)</span>-ös küszöböt, kijelenthető, hogy nincs statisztikailag szignifikáns különbség a valós és a szimulált események időbeli eloszlása között. A valóság követi a matematikai elvárásokat.</p>
+</blockquote>
+</section>
+</section>
 </section>
 </section>
 
